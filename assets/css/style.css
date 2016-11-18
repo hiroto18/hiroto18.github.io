@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	background-color: #000;
+}
+
+body {
+	margin: 0px;
+	color: #FFF;
+	font-family: "Raleway", "Montserrat", sans-serif;
+}
+
+#container {
+	overflow: hidden;
+}
+
+#clinton, #trump {
+	width: 50%;
+	float: left;
+	background-color: transparent;
+}
+
+#clinton {
+	position: relative;
+}
+
+#trump {
+	position: relative;
+}
+
+.profileimg {
+	height: 100vh;
+}
+
+#trump .profileimg {
+	z-index: -1000;
+	transform: translateX(-51%);
+}
+
+#clinton .profileimg {
+	z-index: -1000;
+	transform: translateX(7%);
+}
+
+.info {
+	position: absolute;
+	background-color: transparent;
+	display: none;
+}
+
+#clinton .info {
+	left: 30px;
+	top: 90px;
+}
+
+#trump .info {
+	right: 30px;
+	top: 90px;
+	text-align: right;
+}
+
+#trump .name {
+	font-family: "Merriweather", serif;
+}
+
+#trump .firstname {
+	font-weight: 200;
+	font-size: 36px;
+}
+
+#trump .lastname {
+	font-weight: 400;
+	font-size: 50px;
+	margin-top: -4px;
+}
+
+#clinton .name {
+	font-family: "Montserrat", "Raleway", sans-serif;
+}
+
+#clinton .firstname {
+	font-weight: 200;
+	font-size: 36px;
+}
+
+#clinton .lastname {
+	font-weight: 400;
+	font-size: 50px;
+}
+
+.party {
+	font-family: "Raleway", serif;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+
+
+#arrow {
+	width: 60px!important;
+	position: absolute;
+	bottom: 5%;
+	left: calc(50% - 35px);
+	z-index: 1000;
+	display: none;
+}
+
+#arrow:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.profile {
+	height: 100vh;
+}
