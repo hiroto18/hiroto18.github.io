@@ -1,10 +1,9 @@
-// JavaScript Document
-
 $(document).ready(function(){
 	
-	// Fade in
+	// Fade in and slide up
 	
-	$('.info').fadeIn(50);
-	$('#arrow').fadeIn(50);
+    $(".hidden.info").fadeIn(2000)
+	$(".hidden#arrow").delay(500).fadeIn(2000)
+	
 	
 });

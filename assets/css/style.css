@@ -117,3 +117,7 @@ body {
 .profile {
 	height: 100vh;
 }
+
+.hidden {
+	display: none;
+}
