@@ -29,8 +29,12 @@ body {
 	position: relative;
 }
 
-.profileimg {
-	height: 100vh;
+#profileimg {
+	position: fixed; 
+  	top: 0; 
+  	left: 0; 
+  	min-width: 100%;
+  	min-height: 100%;
 }
 
 #trump .profileimg {
