@@ -29,22 +29,18 @@ body {
 	position: relative;
 }
 
-#profileimg {
-	position: fixed; 
-  	top: 0; 
-  	left: 0; 
-  	min-width: 100%;
-  	min-height: 100%;
+.profileimg {
+	height: 100vh;
 }
 
 #trump .profileimg {
 	z-index: -1000;
-	transform: translateX(-51%);
+	float: left;
 }
 
 #clinton .profileimg {
 	z-index: -1000;
-	transform: translateX(7%);
+	float: right;
 }
 
 .info {
