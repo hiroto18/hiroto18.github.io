@@ -32,15 +32,14 @@ body {
 
 .profileimg {
 	height: 100vh;
+	z-index: -1000;
 }
 
 #trump .profileimg {
-	z-index: -1000;
 	float: left;
 }
 
 #clinton .profileimg {
-	z-index: -1000;
 	float: right;
 }
 
@@ -107,6 +106,7 @@ body {
 	left: calc(50% - 35px);
 	z-index: 1000;
 	display: none;
+	animation: pulse 1s linear infinite;
 }
 
 #arrow:hover {
@@ -120,4 +120,18 @@ body {
 
 .hidden {
 	display: none;
+}
+
+@keyframes pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
 }
