@@ -17,25 +17,60 @@ body {
 	background-color: #000;
 	height: 100vh;
 	width: 100vw;
+	text-align: center;
 	z-index: 1000;
 	position: absolute;
 }
 
+#splashcontents {
+	position: relative;
+	top: 20%;
+}
+
 #splashbutton {
-	position: absolute;
-	top: 35%;
+	position: relative;
+	margin-top: 30px;
 	left: 42%;
 	border-radius: 50%;
 	border: 2px solid white;
 	background-color: transparent;
-	width:200px;
-	height:200px;
-	font-size:20px;
-	line-height:200px;
-	text-align:center;
+	width: 200px;
+	height: 200px;
+	font-size: 20px;
+	line-height: 200px;
+	text-align: center;
 	cursor: pointer;
 	font-size: 30px;
+	z-index: 1500;
 }
+
+#splashshadow {
+	position: absolute;
+	top: 36%;
+	left: 42%;
+	border-radius: 50%;
+	background-color: transparent;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0px 0px 15px rgba(255, 255, 255, 0);
+	animation: pulse2 2s infinite;
+}
+
+#splashtitle {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#splashsub {
+	text-align: center;
+	font-style: italic;
+	position: relative;
+	top: 20%;
+}
+	
 
 #container {
 	overflow: hidden;
@@ -45,13 +80,6 @@ body {
 	width: 50%;
 	float: left;
 	background-color: transparent;
-}
-
-#clinton {
-	position: relative;
-}
-
-#trump {
 	position: relative;
 }
 
@@ -60,27 +88,42 @@ body {
 	z-index: -1000;
 }
 
-#trump .profileimg {
+#clinton .profileimg {
 	float: left;
 }
 
-#clinton .profileimg {
+#trump .profileimg {
 	float: right;
 }
 
 .info {
 	position: absolute;
 	background-color: transparent;
-	top: 15%;
-}
-
-#clinton .info {
-	left: 30px;
+	top: 25%;
+	opacity: 0;
 }
 
 #trump .info {
+	left: 30px;
+}
+
+#clinton .info {
 	right: 30px;
 	text-align: right;
+}
+
+#clinton .name {
+	font-family: "Montserrat", "Raleway", sans-serif;
+}
+
+#clinton .firstname {
+	font-weight: 200;
+	font-size: 36px;
+}
+
+#clinton .lastname {
+	font-weight: 400;
+	font-size: 50px;
 }
 
 #trump .name {
@@ -98,29 +141,13 @@ body {
 	margin-top: -4px;
 }
 
-#clinton .name {
-	font-family: "Montserrat", "Raleway", sans-serif;
-}
-
-#clinton .firstname {
-	font-weight: 200;
-	font-size: 36px;
-}
-
-#clinton .lastname {
-	font-weight: 400;
-	font-size: 50px;
-}
-
 .party {
 	font-family: "Raleway", serif;
 	font-size: 20px;
 	font-weight: 500;
-	margin-top: 10px;
+	margin-top: 30px;
 	font-weight: 500;
 }
-
-
 
 #arrow {
 	width: 60px!important;
@@ -128,15 +155,7 @@ body {
 	bottom: -3%;
 	left: calc(50% - 35px);
 	z-index: 100;
-	/*animation: pulse 1s linear infinite;*/
-}
-
-#arrowshadow {
-	display: none;
-	box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);
-	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	opacity: 0;
 }
 
 #arrow:hover {
@@ -144,24 +163,49 @@ body {
 	cursor: pointer;
 }
 
+#arrowshadow {
+	position: absolute;
+	border-radius: 50%;
+	height: 65px;
+	width: 65px;
+	border-color: #FFF;
+	background-color: transparent;
+	bottom: 3%;
+	left: calc(50% - 36.5px);
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 0);  
+    animation: pulse 2s infinite;
+	animation-delay: 3s;
+	z-index: 50;
+}
+
+#arrowshadow:hover {
+	animation: none;
+}
+
+/* Arrow pulse */
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+		}
+	50% {
+		box-shadow: 0px 0px 25px rgba(255, 255, 255, 0);
+		}
+	100% {
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+		}
+		
+@keyframes pulse2 {
+	10% {
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.75);
+		}
+	50% {
+		box-shadow: 0px 0px 100px rgba(255, 255, 255, 0);
+		}
+	100% {
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+		}
+
 .profile {
 	height: 100vh;
 }
-
-.hidden {
-	opacity: 0;
-}
-
-/*@keyframes pulse {
-    0% {
-    	transform: scale(1, 1);
-    }
-
-    50% {
-    	transform: scale(1.03, 1.03);
-    }
-
-    100% {
-    	transform: scale(1, 1);
-    }
-}*/
