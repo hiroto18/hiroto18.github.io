@@ -4,12 +4,37 @@
 html, body {
 	background-color: #000;
 	min-width: 800px;
+	overflow: hidden;
 }
 
 body {
 	margin: 0px;
 	color: #FFF;
 	font-family: "Raleway", "Montserrat", sans-serif;
+}
+
+#splash {
+	background-color: #000;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1000;
+	position: absolute;
+}
+
+#splashbutton {
+	position: absolute;
+	top: 35%;
+	left: 42%;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: transparent;
+	width:200px;
+	height:200px;
+	font-size:20px;
+	line-height:200px;
+	text-align:center;
+	cursor: pointer;
+	font-size: 30px;
 }
 
 #container {
@@ -46,17 +71,15 @@ body {
 .info {
 	position: absolute;
 	background-color: transparent;
-	display: none;
+	top: 15%;
 }
 
 #clinton .info {
 	left: 30px;
-	top: 90px;
 }
 
 #trump .info {
 	right: 30px;
-	top: 90px;
 	text-align: right;
 }
 
@@ -102,10 +125,9 @@ body {
 #arrow {
 	width: 60px!important;
 	position: absolute;
-	bottom: 5%;
+	bottom: -3%;
 	left: calc(50% - 35px);
-	z-index: 1000;
-	display: none;
+	z-index: 100;
 	animation: pulse 1s linear infinite;
 }
 
@@ -119,19 +141,19 @@ body {
 }
 
 .hidden {
-	display: none;
+	opacity: 0;
 }
 
 @keyframes pulse {
     0% {
-     transform: scale(1, 1);
+    	transform: scale(1, 1);
     }
 
     50% {
-     transform: scale(1.1, 1.1);
+    	transform: scale(1.03, 1.03);
     }
 
     100% {
-    transform: scale(1, 1);
+    	transform: scale(1, 1);
     }
 }
