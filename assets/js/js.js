@@ -18,10 +18,10 @@ $(document).ready(function(){
 			{opacity: "1", top:"20%"}, {duration: "slow"}, "swing");
 		$("#arrow").delay(750).animate(
 			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");
+		$("#arrowshadow").delay(750).animate(
+			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");
 		$("#arrowshadow").attr("display", "block");
 	})
-	
-	// Pulse
 	
 	
 	

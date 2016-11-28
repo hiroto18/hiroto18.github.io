@@ -166,12 +166,13 @@ body {
 #arrowshadow {
 	position: absolute;
 	border-radius: 50%;
-	height: 65px;
-	width: 65px;
+	height: 60px;
+	width: 60px;
 	border-color: #FFF;
 	background-color: transparent;
-	bottom: 3%;
-	left: calc(50% - 36.5px);
+	bottom: -3%;
+	left: calc(50% - 35px);
+	opacity: 0;
 	box-shadow: 0px 0px 5px rgba(255, 255, 255, 0);  
     animation: pulse 2s infinite;
 	animation-delay: 3s;
@@ -189,7 +190,7 @@ body {
 		box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
 		}
 	50% {
-		box-shadow: 0px 0px 25px rgba(255, 255, 255, 0);
+		box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
 		}
 	100% {
 		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
@@ -197,10 +198,10 @@ body {
 		
 @keyframes pulse2 {
 	10% {
-		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.75);
+		box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 		}
 	50% {
-		box-shadow: 0px 0px 100px rgba(255, 255, 255, 0);
+		box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.8);
 		}
 	100% {
 		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
@@ -208,4 +209,8 @@ body {
 
 .profile {
 	height: 100vh;
+}
+
+.hidden {
+	display: none
 }
