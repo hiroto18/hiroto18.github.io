@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Arrows */
+
+.arrow {
+	width: 60px!important;
+	position: absolute;
+	z-index: 100;
+	opacity: 0;
+	left: calc(50% - 35px);
+}
+
+.arrow:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+.arrowshadow {
+	position: absolute;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	border-color: #FFF;
+	background-color: transparent;
+	opacity: 0;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 0);  
+    animation: pulse 2s infinite;
+	animation-delay: 3s;
+	z-index: 50;
+}
+
+.arrowshadow:hover {
+	animation: none;
+}
+
+/* Main arrow */
+
+.arrowdown, .arrowdownshadow {
+	bottom: -3%;
+}
+
+/* Summary page arrows */
+
+#summaryarrowup {
+	-moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+	top: 5%;
+}
+
+/* Arrow pulse */
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+		}
+	50% {
+		box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
+		}
+	100% {
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+		}
+		
+@keyframes pulse2 {
+	10% {
+		box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+		}
+	50% {
+		box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.8);
+		}
+	100% {
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+		}
+		
+/* ------ */

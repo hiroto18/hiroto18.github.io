@@ -4,6 +4,7 @@
 	<title>Clinton vs. Trump</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Merriweather" rel="stylesheet">
+    <link href="assets/css/arrows.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="assets/js/js.js"></script>
     
@@ -12,18 +13,23 @@
 <body>
 
 	<div id = "splash">
+    
     	<div id = "splashcontents">
     		<div id = "splashtitle">Clinton vs. Trump</div>
         	<div id = "splashsub">A detailed breakdown of the two US presidental candidates</div>
     		<div id = "splashbutton">BEGIN</div>
         	<div id = "splashshadow"></div>
         </div>
+        
     </div>
     
+    
 	<div id = "container">
-     <div data-anchor = "intro">
-    	<a href="#policies"><img src="assets/img/arrow2.png" id = "arrow"></a>
-        <div id="arrowshadow"></div>
+    
+     <div id = "intro">
+     
+    	<img src="assets/img/arrow2.png" class = "arrow arrowdown" id = "mainarrow">
+        <div class = "arrowshadow arrowdownshadow"></div>
         
         <div id = "clinton">
         	<img src="assets/img/clinton2.png" class = "profileimg">
@@ -56,8 +62,46 @@
         
      </div>
      
-     <div data-anchor = "policies">
+     <div id = "transition1">
+     	<div id = "transition1left"></div>
+        <div id = "transition1right"></div>     
+     </div>
      
+     <div id = "summary">
+     	
+        <img src="assets/img/arrow2.png" class = "arrow" id = "summaryarrowup">
+        <div class = "arrowshadow"></div>
+     
+     	<div id = "clintonsummary">
+        	<img src="assets/img/clinton_logo.png" id = "clintonlogo">
+            <div class = "bio">
+            	Hillary Clinton was born in 1947, in Chicago. She married Bill Clinton in 1975; she later served as first lady, and then as a U.S. senator. In early 2007, Clinton announced her plans to run for the presidency, but she lost to Barack Obama. After winning the national election, Obama appointed Clinton secretary of state. In 2015, she announced her plans to run again for the presidency. In 2016, she became the first woman in U.S. history to become the presidential nominee of a major party.
+            </div>  
+        </div>
+        
+        <div id = "trumpsummary">
+        	<img src="assets/img/trump_logo.png" id = "trumplogo">
+            <div class = "bio">
+            	Donald John Trump was born in 1946, in New York. In 1971, he became involved in large, profitable building projects in Manhattan. In 2004, Trump began starring in the hit NBC reality series The Apprentice. In 2015 he announced his candidacy for president of the United States on the Republican ticket. After winning a majority of the primaries and caucuses, Trump became the official Republican candidate for president.
+            </div>
+        
+        </div>
+        
+        <img src="assets/img/arrow2.png" class = "arrow arrowdown" id = "summaryarrowdown">
+        <div class = "arrowshadow arrowdownshadow"></div>
+        
+     </div>
+     
+     <div id = "policyoverview">
+     
+     	<div id = "clintonpolicies">
+        
+        </div>
+        
+        <div id = "trumppolicies">
+        
+        </div>
+        
      </div>
         
     </div>

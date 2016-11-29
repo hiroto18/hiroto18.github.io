@@ -4,22 +4,26 @@
 html, body {
 	background-color: #000;
 	min-width: 800px;
-	overflow: hidden;
 }
 
 body {
 	margin: 0px;
 	color: #FFF;
 	font-family: "Raleway", "Montserrat", sans-serif;
+	overflow: hidden;
 }
+
+
+/* Splash */
 
 #splash {
 	background-color: #000;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	text-align: center;
 	z-index: 1000;
 	position: absolute;
+	overflow: hidden;
 }
 
 #splashcontents {
@@ -30,6 +34,7 @@ body {
 #splashbutton {
 	position: relative;
 	margin-top: 30px;
+	top: 36%;
 	left: 42%;
 	border-radius: 50%;
 	border: 2px solid white;
@@ -58,6 +63,7 @@ body {
 
 #splashtitle {
 	text-align: center;
+	width: 100%;
 	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -66,15 +72,21 @@ body {
 
 #splashsub {
 	text-align: center;
+	width: 100%;
 	font-style: italic;
 	position: relative;
 	top: 20%;
 }
-	
+
+/* -------- */
+
 
 #container {
 	overflow: hidden;
 }
+
+
+/* Intro */
 
 #clinton, #trump {
 	width: 50%;
@@ -84,7 +96,7 @@ body {
 }
 
 .profileimg {
-	height: 100vh;
+	height: 100%;
 	z-index: -1000;
 }
 
@@ -149,67 +161,99 @@ body {
 	font-weight: 500;
 }
 
-#arrow {
-	width: 60px!important;
-	position: absolute;
-	bottom: -3%;
-	left: calc(50% - 35px);
-	z-index: 100;
-	opacity: 0;
+.profile {
+	height: 100%;
 }
 
-#arrow:hover {
-	color: #000;
-	cursor: pointer;
+/* ------ */
+
+/* 1st transition */
+
+#transition1left, #transition1right {
+	height: 500px;
+	width: 50%;
+	float: left;
+	position: relative;
+	z-index: -100;
 }
 
-#arrowshadow {
+#transition1left {
+	background: linear-gradient(black, #082d82);
+}
+
+#transition1right {
+	background: linear-gradient(black, #8A0000);
+}
+
+/* ---- */
+
+
+/* Summary */
+
+#summary {
 	position: absolute;
-	border-radius: 50%;
-	height: 60px;
-	width: 60px;
-	border-color: #FFF;
-	background-color: transparent;
-	bottom: -3%;
-	left: calc(50% - 35px);
-	opacity: 0;
-	box-shadow: 0px 0px 5px rgba(255, 255, 255, 0);  
-    animation: pulse 2s infinite;
-	animation-delay: 3s;
+	top: calc(100% + 500px);
+	height: 100%;
+	width: 100%;
+}
+
+#clintonsummary, #trumpsummary {
+	width: 50%;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+
+#clintonsummary {
+	background-color: #082d82;
+}
+
+#trumpsummary {
+	background-color: #8A0000;
+}
+
+#clintonlogo, #trumplogo {
+	height: 50%;
+	position: absolute;
+	z-index: 20;
+	top: 30%;
+}
+
+#clintonlogo {
+	float: left;
+	left: -15%;
+}
+
+#trumplogo {
+	float: right;
+	right: -55%;
+}
+
+.bio {
+	width: 50%;
+	position: absolute;
+	top: 30%;
 	z-index: 50;
 }
 
-#arrowshadow:hover {
-	animation: none;
+#clintonsummary .bio {
+	right: 30px;
+	text-align: right;
 }
 
-/* Arrow pulse */
-
-@keyframes pulse {
-	0% {
-		box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
-		}
-	50% {
-		box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
-		}
-	100% {
-		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
-		}
-		
-@keyframes pulse2 {
-	10% {
-		box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
-		}
-	50% {
-		box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.8);
-		}
-	100% {
-		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
-		}
-
-.profile {
-	height: 100vh;
+#trumpsummary .bio {
+	left: 30px;
 }
+
+/* ------ */
+
+
+/* Policies */
+
+
+
+/* ----- */
+
 
 .hidden {
 	display: none
