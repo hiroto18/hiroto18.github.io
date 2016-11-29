@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	
+	$(window).scrollTop(0);
+	
 	$("#splashcontents").hide().fadeIn(1000);
 	
 	// Splash button events
