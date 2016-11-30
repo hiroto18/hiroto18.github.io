@@ -4,6 +4,7 @@
 html, body {
 	background-color: #000;
 	min-width: 800px;
+	-webkit-text-size-adjust: auto;
 }
 
 body {
@@ -350,6 +351,7 @@ body {
 	text-align: right;
 	margin-right: 10%;
 	float: right;
+	margin-top: 30%;
 }
 
 .listitem {
