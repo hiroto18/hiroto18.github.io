@@ -35,14 +35,31 @@ $(document).ready(function(){
         	scrollTop: $("#intro").offset().top}, 1000);});
 	$("#summaryarrowdown").click(function() {
     	$('html, body').animate({
-        	scrollTop: $("#policyoverview").offset().top}, 1500);});
+        	scrollTop: $("#policytitle").offset().top}, 1500);});
+	$("#policyarrowup").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("#summary").offset().top}, 1000);});
 	
 	// Summary page
 	
-		//Logos moves in
+		//Logos and arrows move in
 		$("#mainarrow").click(function(){
-			$("#clintonlogo").delay(500).attr("left", "200px")});
-			$("#trumplogo").delay(500).attr("right", "-350px");
+			$("#clintonlogo").delay(1750).attr("left", "200px");
+			$("#trumplogo").delay(1750).attr("right", "-350px");
+		$("#summaryarrowdown").delay(2000).animate(
+			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");
+		$("#summaryarrowup").delay(2000).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing")});
+			
+			
+	// Policy overview page
+	$("#summaryarrowdown").click(function(){
+		$("#policyarrowup").delay(2000).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing")
+		$("#policytexttitle").delay(1750).fadeIn(100);
+		$("#policysub").delay(1875).fadeIn(100);
+		$("#policyoverview").delay(1950).fadeIn(100);});
+		
 	
 	
 });

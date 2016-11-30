@@ -8,7 +8,7 @@
 	position: absolute;
 	z-index: 100;
 	opacity: 0;
-	left: calc(50% - 35px);
+	left: calc(50% - 30px);
 }
 
 .arrow:hover {
@@ -21,6 +21,7 @@
 	border-radius: 50%;
 	height: 60px;
 	width: 60px;
+	left: calc(50% - 30px);
 	border-color: #FFF;
 	background-color: transparent;
 	opacity: 0;
@@ -42,12 +43,12 @@
 
 /* Summary page arrows */
 
-#summaryarrowup {
+.arrowup {
 	-moz-transform: scale(-1, -1);
     -o-transform: scale(-1, -1);
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
-	top: 5%;
+	top: -3%;
 }
 
 /* Arrow pulse */
@@ -57,21 +58,23 @@
 		box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
 		}
 	50% {
-		box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
+		box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.6);
 		}
 	100% {
 		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
 		}
+}
 		
 @keyframes pulse2 {
 	10% {
-		box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+		box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
 		}
 	50% {
-		box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.8);
 		}
 	100% {
-		box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+		box-shadow: 0px 0px 15px rgba(255, 255, 255, 0);
 		}
+}
 		
 /* ------ */
