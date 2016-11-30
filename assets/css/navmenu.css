@@ -17,11 +17,11 @@
     height: 0;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 899;
     top: 0;
     left: 0;
     background-color: #111;
-    overflow-y: hidden;
+    overflow: hidden;
     padding: 10px 0 5px 0;
     transition: 0.6s;
 }
@@ -32,7 +32,12 @@
     font-size: 25px;
     color: #FFF;
     display: block;
-    transition: 0.4s
+    transition: 0.4s;
+	cursor: pointer;
+}
+
+.navitemlist {
+	margin-left: 10px;
 }
 
 .navitem:hover {

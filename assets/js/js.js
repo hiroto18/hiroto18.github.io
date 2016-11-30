@@ -38,7 +38,7 @@ $(document).ready(function(){
 	$("#navicon").click(function() {
 		
 		if (clicks == 0) {
-			$(".navmenu").css("height", "300px");
+			$(".navmenu").css("height", "300px") ;
 			clicks = 1;
 		} else {
 			$(".navmenu").css("height", "0px");
@@ -46,13 +46,47 @@ $(document).ready(function(){
 		}
 	});
 	
+		//Scroll
+		$("#navmenuhome").click(function() {
+    		$('html, body').animate({
+        	scrollTop: $("#intro").offset().top}, 1000);
+			$("#navicon").delay(1250).animate(
+			{left: "0%", right: "0%"}, "slow");});
+		$("#navmenusummary").click(function() {
+    		$('html, body').animate({
+        	scrollTop: $("#summary").offset().top}, 1000);
+			$("#navicon").delay(1250).animate(
+			{left: "3%", right: "97%"}, "slow");});
+		$("#navmenupolicy").click(function() {
+    		$('html, body').animate({
+        	scrollTop: $("#policytitle").offset().top}, 1000);
+			$("#navicon").delay(1250).animate(
+			{left: "3%", right: "97%"}, "slow");});
+		$("#navmenuenvironment").click(function() {
+    		$('html, body').animate({
+        	scrollTop: $("#policyenvironment").offset().top}, 1000);
+			$("#navicon").delay(1250).animate(
+			{left: "3%", right: "97%"}, "slow");});
+		$("#navmenueconomy").click(function() {
+    		$('html, body').animate({
+        	scrollTop: $("#policyeconomy").offset().top}, 1000);
+			$("#navicon").delay(1250).animate(
+			{left: "3%", right: "97%"}, "slow");});
+		$("#navmenusocial").click(function() {
+    		$('html, body').animate({
+        	scrollTop: $("#policysocial").offset().top}, 1000);
+			$("#navicon").delay(1250).animate(
+			{left: "3%", right: "97%"}, "slow");});
+		
 	
 	
 	// Arrow scroll
 
 	$("#summaryarrowup").click(function() {
     	$('html, body').animate({
-        	scrollTop: $("#intro").offset().top}, 1000);});
+        	scrollTop: $("#intro").offset().top}, 1000);
+		$("#navicon").delay(1500).animate(
+			{left: "0%", right: "0%"}, "slow");});
 	$("#summaryarrowdown").click(function() {
     	$('html, body').animate({
         	scrollTop: $("#policytitle").offset().top}, 1500);});
