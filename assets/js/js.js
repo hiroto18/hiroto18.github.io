@@ -33,10 +33,18 @@ $(document).ready(function(){
 	
 	// Navmenu
 	
+	var clicks = 0;
+	
 	$("#navicon").click(function() {
-		$(".navmenu").attr("height", "500px")});
-	$("#closenav").click(function() {
-		$(".navmenu").attr("height", "0")});
+		
+		if (clicks == 0) {
+			$(".navmenu").css("height", "300px");
+			clicks = 1;
+		} else {
+			$(".navmenu").css("height", "0px");
+			clicks = 0;
+		}
+	});
 	
 	
 	

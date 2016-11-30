@@ -21,9 +21,9 @@
     top: 0;
     left: 0;
     background-color: #111;
-    overflow: hidden;
+    overflow-y: hidden;
     padding: 10px 0 5px 0;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .navitem {
@@ -32,17 +32,9 @@
     font-size: 25px;
     color: #FFF;
     display: block;
-    transition: 0.3s
+    transition: 0.4s
 }
 
 .navitem:hover {
     color: #f1f1f1;
-}
-
-#closenav {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
