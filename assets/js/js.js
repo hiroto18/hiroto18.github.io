@@ -60,6 +60,45 @@ $(document).ready(function(){
 		$("#policysub").delay(1875).fadeIn(100);
 		$("#policyoverview").delay(1950).fadeIn(100);});
 		
+	// Policy page links
+	
+	$("#environmentclick").click(function() {
+		$('html, body').animate({
+        	scrollTop: $("#policyenvironment").offset().top}, 1000);
+		$("#environmentarrowdown").delay(1500).animate(
+			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");});
+			
+	$("#economyclick").click(function() {
+		$('html, body').animate({
+        	scrollTop: $("#policyeconomy").offset().top}, 1000);
+			$("#economyarrowup").delay(1500).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing");
+			$("#economyarrowdown").delay(1500).animate(
+			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");});
+			
+	$("#socialclick").click(function() {
+		$('html, body').animate({
+        	scrollTop: $("#policysocial").offset().top}, 1000);
+			$("#socialarrowup").delay(1500).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing");});
+			
+	// Policy arrows
+	
+	$("#environmentarrowdown").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("#policyeconomy").offset().top}, 1000);});
+			
+	$("#economyarrowup").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("#policyenvironment").offset().top}, 1000);});
+	$("#economyarrowdown").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("#policysocial").offset().top}, 1000);});
+			
+	$("#socialarrowup").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("#policyeconomy").offset().top}, 1000);});
+		
 	
 	
 });

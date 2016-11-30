@@ -311,36 +311,30 @@ body {
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
-	
 
-#policyenvironment {
+.policyview {
 	position: absolute;
-	top: calc(300% + 1500px);
 	height: 100%;
 	width: 100%;
 }
 
-.policyview {
-	width: 50%;
-	position: absolute;
-	top: 30%;
-	z-index: 50;
-}
-
-#clintonpolicies, #trumppolicies {
+.clintonpolicies, .trumppolicies {
 	width: 50%;
 	float: left;
 	position: relative;
 	height: 100%;
 }
 
-#clintonpolicies .policyview {
-	left: 15%;
+#policyenvironment {
+	top: calc(300% + 1500px);
 }
 
-#trumppolicies .policyview {
-	right: 15%;
-	margin-right: 0px;
+#policyeconomy {
+	top: calc(400% + 1500px);
+}
+
+#policysocial {
+	top: calc(500% + 1500px);
 }
 
 /* ----- */
