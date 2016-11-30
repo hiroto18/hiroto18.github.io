@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+#navicon {
+	position: fixed;
+	top: 5%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 30px;
+	height: auto;
+	cursor: pointer;
+	z-index: 900;
+}
+
+.navmenu {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    padding: 10px 0 5px 0;
+    transition: 0.5s;
+}
+
+.navitem {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s
+}
+
+.navitem:hover {
+    color: #f1f1f1;
+}
+
+#closenav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

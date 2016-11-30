@@ -233,6 +233,7 @@ body {
 	position: absolute;
 	top: 30%;
 	z-index: 50;
+	line-height: 25px;
 }
 
 #clintonsummary .bio {
@@ -242,6 +243,7 @@ body {
 
 #trumpsummary .bio {
 	left: 30px;
+	font-family: "Merriweather", serif;
 }
 
 /* ------ */
@@ -310,6 +312,16 @@ body {
 	cursor: pointer;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	width: auto;
+}
+
+#capitol {
+	position: absolute;
+	bottom: 0;
+	width: 500px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 }
 
 .policyview {
@@ -325,16 +337,39 @@ body {
 	height: 100%;
 }
 
+.list {
+	width: 50%;
+	margin-top: 32%;
+}
+
+.clintonpolicies .list {
+	margin-left: 10%;
+}
+
+.trumppolicies .list {
+	text-align: right;
+	margin-right: 10%;
+	float: right;
+}
+
+.listitem {
+	margin: 10px 0 10px 0;
+}
+
+.list > .listitem:first {
+	margin-top: 0;
+}
+
 #policyenvironment {
-	top: calc(300% + 1500px);
+	top: calc(300% + 1600px);
 }
 
 #policyeconomy {
-	top: calc(400% + 1500px);
+	top: calc(400% + 1700px);
 }
 
 #policysocial {
-	top: calc(500% + 1500px);
+	top: calc(500% + 1800px);
 }
 
 /* ----- */

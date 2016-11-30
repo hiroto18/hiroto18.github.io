@@ -5,6 +5,7 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Merriweather" rel="stylesheet">
     <link href="assets/css/arrows.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/navmenu.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="assets/js/js.js"></script>
     
@@ -26,6 +27,23 @@
     
 	<div id = "container">
     
+     <nav class = "navmenu">
+     	<a href="javascript:void(0)" id = "closenav">&times;</a>
+     	<ul class = "navitemlist">
+    		<li class="navitem">HOME</li>
+    		<li class="navitem">SUMMARY</li>
+    		<li class="navitem">POLICIES</li>
+    		<ul id = "subnavmenu">
+            	<li class="navitem">Environment</li>
+    			<li class="navitem">Economy</li>
+				<li class="navitem">Social and domestic</li>
+            </ul>
+  		</ul>
+	 </nav>
+     
+     <img src="assets/img/menu_icon.png" id = "navicon">
+     
+     
      <div id = "intro">
      
     	<img src="assets/img/arrow2.png" class = "arrow arrowdown" id = "mainarrow">
@@ -126,6 +144,8 @@
                     
         </div>
         
+        <img src="assets/img/capitol.png" id = "capitol">
+        
      </div>
      
      
@@ -161,7 +181,7 @@
          
      <div class = "policyview" id = "policyeconomy">
      
-     	<img src="assets/img/arrow.png" class = "arrow" id = "economyarrowup">
+     	<img src="assets/img/arrow.png" class = "arrow arrowup" id = "economyarrowup">
         <div class = "arrowshadow"></div>
      
      	<div class = "clintonpolicies" id = "clintoneconomy">
@@ -194,7 +214,7 @@
      
      <div class = "policyview" id = "policysocial">
      
-     	<img src="assets/img/arrow.png" class = "arrow" id = "socialarrowup">
+     	<img src="assets/img/arrow.png" class = "arrow arrowup" id = "socialarrowup">
         <div class = "arrowshadow"></div>
      
      	<div class = "clintonpolicies" id = "clintonsocial">
