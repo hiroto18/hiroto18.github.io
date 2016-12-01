@@ -17,6 +17,8 @@ $(document).ready(function(){
 		$(".profileimg").delay(300).fadeIn(100);
     	$(".info").delay(550).animate(
 			{opacity: "1", top:"20%"}, {duration: "slow"}, "swing");
+		$("#mainproceed").delay(700).animate(
+			{opacity: "1", bottom:"15%"}, {duration: "slow"},"swing");
 		$("#mainarrow").delay(750).animate(
 			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");
 		$("#mainarrowshadow").delay(750).animate(

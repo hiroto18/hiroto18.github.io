@@ -78,3 +78,16 @@
 }
 		
 /* ------ */
+
+.proceedtext {
+	position: absolute;
+	bottom: 0%;
+	opacity: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	margin: auto;
+	cursor: default;
+	font-size: 14px;
+	font-style: italic;
+}
