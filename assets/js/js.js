@@ -8,14 +8,9 @@ $(document).ready(function(){
 	
 	// Splash button events
 	
-	$("#splashbutton").hover(function() {
-        $(this)
-    });
-	
 	$("#splashbutton").click(function(){
 		
 		$("#splash").fadeOut(400, "swing");
-	
 	
 	
 		// Fade in and slide up	main page
@@ -56,27 +51,53 @@ $(document).ready(function(){
     		$('html, body').animate({
         	scrollTop: $("#summary").offset().top}, 1000);
 			$("#navicon").delay(1250).animate(
-			{left: "3%", right: "97%"}, "slow");});
+			{left: "3%", right: "97%"}, "slow");
+			$("#navicon").delay(1500).animate(
+			{left: "3%", right: "97%"}, "slow");
+			$("#clintonlogo").delay(1750).attr("left", "200px");
+			$("#trumplogo").delay(1750).attr("right", "-350px");
+			$("#summaryarrowdown").delay(2000).animate(
+			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");
+			$("#summaryarrowup").delay(2000).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing")});
+			
 		$("#navmenupolicy").click(function() {
     		$('html, body').animate({
         	scrollTop: $("#policytitle").offset().top}, 1000);
 			$("#navicon").delay(1250).animate(
-			{left: "3%", right: "97%"}, "slow");});
+			{left: "3%", right: "97%"}, "slow");
+			$("#policyarrowup").delay(2000).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing")
+		$("#policytexttitle").delay(1750).fadeIn(100);
+		$("#policysub").delay(1875).fadeIn(100);
+		$("#policyoverview").delay(1950).fadeIn(100);});
+		
 		$("#navmenuenvironment").click(function() {
     		$('html, body').animate({
         	scrollTop: $("#policyenvironment").offset().top}, 1000);
 			$("#navicon").delay(1250).animate(
-			{left: "3%", right: "97%"}, "slow");});
+			{left: "3%", right: "97%"}, "slow");
+			$("#environmentarrowdown").delay(1500).animate(
+			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");
+			});
+			
 		$("#navmenueconomy").click(function() {
     		$('html, body').animate({
         	scrollTop: $("#policyeconomy").offset().top}, 1000);
 			$("#navicon").delay(1250).animate(
-			{left: "3%", right: "97%"}, "slow");});
+			{left: "3%", right: "97%"}, "slow");
+			$("#economyarrowup").delay(1500).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing");
+			$("#economyarrowdown").delay(1500).animate(
+			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");});
+			
 		$("#navmenusocial").click(function() {
     		$('html, body').animate({
         	scrollTop: $("#policysocial").offset().top}, 1000);
 			$("#navicon").delay(1250).animate(
-			{left: "3%", right: "97%"}, "slow");});
+			{left: "3%", right: "97%"}, "slow");
+			$("#socialarrowup").delay(1500).animate(
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing");});
 		
 	
 	
