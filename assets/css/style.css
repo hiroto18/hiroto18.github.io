@@ -100,6 +100,7 @@ body {
 	float: left;
 	background-color: transparent;
 	position: relative;
+	cursor: default;
 }
 
 .profileimg {
@@ -202,6 +203,7 @@ body {
 	background-color: transparent;
 	z-index: 1;
 	font-size: 24px;
+	cursor: default;
 }
 
 
@@ -311,6 +313,7 @@ body {
 	position: relative;
 	top: 35%;
 	width: 100%;
+	cursor: default;
 }
 
 #policytexttitle {
