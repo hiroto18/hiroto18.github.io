@@ -25,6 +25,7 @@ body {
 	z-index: 1000;
 	position: absolute;
 	overflow: hidden;
+	cursor: default;
 }
 
 #splashcontents {
