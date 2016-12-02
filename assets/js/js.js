@@ -35,7 +35,7 @@ $(document).ready(function(){
 	$("#navicon").click(function() {
 		
 		if (clicks == 0) {
-			$(".navmenu").css("height", "300px") ;
+			$(".navmenu").css("height", "310px") ;
 			clicks = 1;
 		} else {
 			$(".navmenu").css("height", "0px");
