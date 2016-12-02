@@ -194,6 +194,17 @@ body {
 /* ---- */
 
 
+.sectiontitle {
+	position: absolute;
+	top: 18%;
+	width: 100%;
+	text-align: center;
+	background-color: transparent;
+	z-index: 1;
+	font-size: 24px;
+}
+
+
 /* Summary */
 
 #summary {
@@ -201,6 +212,10 @@ body {
 	top: calc(100% + 500px);
 	height: 100%;
 	width: 100%;
+}
+
+#summarytitle {
+	font-size: 30px;
 }
 
 #clintonsummary, #trumpsummary {
@@ -246,6 +261,9 @@ body {
 #clintonsummary .bio {
 	right: 30px;
 	text-align: right;
+	font-family: "Montserrat", "Raleway", sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
 }
 
 #trumpsummary .bio {
