@@ -1,2 +1,2 @@
-# hiroto18.github.io
-Web Design Decal
+# shoummashams.github.io/CvT
+Web Design Decal Final Project, Autumn 2016
