@@ -14,7 +14,7 @@
 }
 
 .navmenu {
-    height: 0;
+    height: 0px;
     width: 100%;
     position: fixed;
     z-index: 899;

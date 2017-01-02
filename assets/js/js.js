@@ -34,13 +34,12 @@ $(document).ready(function(){
 	
 	$("#navicon").click(function() {
 		
-		if (clicks == 0) {
-			$(".navmenu").css("height", "310px") ;
-			clicks = 1;
-		} else {
-			$(".navmenu").css("height", "0px");
-			clicks = 0;
-		}
+		if ($(".navmenu").attr("height") == "0px") 
+			{
+				$(".navmenu").css("height", "310px") ;
+			} else {
+				$(".navmenu").css("height", "0px");
+			}
 	});
 	
 		//Scroll
@@ -48,7 +47,8 @@ $(document).ready(function(){
     		$('html, body').animate({
         	scrollTop: $("#intro").offset().top}, 1000);
 			$("#navicon").delay(1250).animate(
-			{left: "0%", right: "0%"}, "slow");});
+			{left: "0%", right: "0%"}, "slow");
+			$(".navmenu").css("height", "0px");});
 		$("#navmenusummary").click(function() {
     		$('html, body').animate({
         	scrollTop: $("#summary").offset().top}, 1000);
@@ -61,7 +61,8 @@ $(document).ready(function(){
 			$("#summaryarrowdown").delay(2000).animate(
 			{opacity: "1", bottom:"5%"}, {duration: "slow"},"swing");
 			$("#summaryarrowup").delay(2000).animate(
-			{opacity: "1", top:"5%"}, {duration: "slow"},"swing")});
+			{opacity: "1", top:"5%"}, {duration: "slow"},"swing");
+			$(".navmenu").css("height", "0px");});
 			
 		$("#navmenupolicy").click(function() {
     		$('html, body').animate({
@@ -72,7 +73,8 @@ $(document).ready(function(){
 			{opacity: "1", top:"5%"}, {duration: "slow"},"swing")
 		$("#policytexttitle").delay(1750).fadeIn(100);
 		$("#policysub").delay(1875).fadeIn(100);
-		$("#policyoverview").delay(1950).fadeIn(100);});
+		$("#policyoverview").delay(1950).fadeIn(100);
+		$(".navmenu").css("height", "0px");});
 		
 		$("#navmenuenvironment").click(function() {
     		$('html, body').animate({
